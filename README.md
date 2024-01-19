@@ -28,10 +28,4 @@
 
 ## Elemento: Unidades pequeñas definen lo que se vera en la pantalla (los componentes estan hechos de elementos, para diferenciarlos las etiquetas de los componentes empiezan con mayuscula y los elementos en minuscula)
 
-## Atributos: Se puede asignar a los elementos atributos cambiando la manera de escribirlos en algunos casos ej en HTML: 
-<h1 class="titulo-azul"></h1>
-
-## En JSX:
-<h1 classname="titulo-azul"></h1>
-
-## Atributo Style: 
+## Atributos: Se puede asignar a los elementos atributos cambiando la manera de escribirlos en algunos casos ej class en HTML classname en JSX
