@@ -1,17 +1,10 @@
-import { useState, useEffect } from 'react'
+import useUsers from '../../hooks/useUsers';
 
 const Users = () => {
-  const [users, setUsers] = useState([])
-  useEffect(() => {
-    const getData = async () => {
-      const response  = await fetch('users.json');
-      console.log('setting')
-      setUsers( await response.json());
-    }
-  
-    getData()
-  },[])
-  
+  const { users, isLoading } = useUsers()
+  if (isLoading) {
+    return <h3>Loading Data</h3>
+  }
 
   return (
     <div>
